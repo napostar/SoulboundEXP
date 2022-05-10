@@ -19,5 +19,6 @@ contract SoulboundEXPToken is ERC20, Ownable {
 
     function _transfer(address from, address to, uint256 amount) internal override {
         //override transfer and make it do nothing... :)
+        revert("Transfer is disabled");
     }
 }
